@@ -2,7 +2,7 @@
 
 This repository contains code for classifying tensor data using the HOSVD as described in [1]. The approach is illustrated using the example of classifying New Zealand honey brands based on the data in [2].
 
-## Methods
+## Method
 
 The classification method proposed in [1] is a multidimensional variant of the SIMCA algorithm [3]. The approach follows the principle of class modelling (CM), i.e., constructing a set of basis arrays via HOSVD for each class to capture dominant characteristics. The algorithm proceeds in two stages: during the training phase, class models are built from the training data by truncating the HOSVD. In the testing phase, a residual is calculated between an unknown input and each class model, which is then used to assign the input to a class.
 
